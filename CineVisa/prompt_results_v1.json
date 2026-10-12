@@ -1,0 +1,427 @@
+{
+  "version": "V1",
+  "description": "Basic system prompts",
+  "taste_agent": {
+    "input": "I loved Kara Para Ask because of its complex characters and emotional depth. I enjoyed the intricate plot twists and how the story kept me guessing. However, I disliked the slow pacing and lack of development for side characters. I loved the emotional connection and natural acting.",
+    "output": {
+      "favorite_titles": [
+        "Kara Para Ask"
+      ],
+      "liked_traits": [
+        "complex characters",
+        "emotional depth",
+        "intricate plot twists",
+        "emotional connection",
+        "natural acting"
+      ],
+      "disliked_traits": [
+        "slow pacing",
+        "lack of development for side characters"
+      ],
+      "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+    }
+  },
+  "intent_agent": {
+    "input": "I want a series similar to Kara Para Ask, but with faster pacing and better side-character development. I prefer English or Spanish series. I want complex characters, emotional depth, and an engaging story.",
+    "output": {
+      "request_type": "similar_story",
+      "reference_titles": [
+        "Kara Para Ask"
+      ],
+      "desired_traits": [
+        "faster pacing",
+        "better side-character development",
+        "complex characters",
+        "emotional depth",
+        "engaging story"
+      ],
+      "excluded_traits": [],
+      "preferred_languages": [
+        "English",
+        "Spanish"
+      ],
+      "excluded_languages": [],
+      "max_episodes": null,
+      "explanation": "",
+      "language_relation": "any"
+    }
+  },
+  "discovery_agent": {
+    "output": {
+      "candidate_ids": [
+        6,
+        7
+      ],
+      "search_reason": "Both options feature complex characters and emotional depth, with faster pacing compared to 'Kara Para Ask'. 'Cable Girls' offers character development through female friendships, while '30 Coins' delves into engaging supernatural mysteries."
+    },
+    "candidates": [
+      {
+        "id": 6,
+        "title": "Cable Girls",
+        "country": "Spain",
+        "language": "Spanish",
+        "genres": [
+          "Historical",
+          "Romance",
+          "Melodrama"
+        ],
+        "overview": "Four women working at a telephone company in 1920s Madrid struggle with love, friendship, independence, and social expectations.",
+        "story_traits": [
+          "female friendships",
+          "forbidden romance",
+          "betrayal",
+          "emotional conflicts",
+          "social change"
+        ],
+        "episode_count": 42,
+        "content_type": null
+      },
+      {
+        "id": 7,
+        "title": "30 Coins",
+        "country": "Spain",
+        "language": "Spanish",
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Supernatural",
+          "Thriller"
+        ],
+        "overview": "A priest living in a small Spanish village becomes involved in terrifying supernatural events connected to a mysterious religious artifact.",
+        "story_traits": [
+          "supernatural horror",
+          "religious mystery",
+          "dark atmosphere",
+          "psychological fear",
+          "conspiracy"
+        ],
+        "episode_count": 16,
+        "content_type": null
+      }
+    ]
+  },
+  "similarity_agent": {
+    "output": {
+      "recommendations": [
+        {
+          "movie_id": 6,
+          "score": 85,
+          "explanation": "Cable Girls offers complex characters and emotional depth, focusing on the struggles of four women against societal expectations. The pacing is faster than that in Kara Para Ask, and the series develops side characters well, giving them their own arcs and emotional conflicts. This aligns well with your preference for character development and emotional connections."
+        },
+        {
+          "movie_id": 7,
+          "score": 70,
+          "explanation": "30 Coins presents an engaging story with complex characters set against a backdrop of supernatural mystery. While it may not focus on emotional depth in the same way as your preferred titles, it offers an intricate plot with suspenseful elements. The pacing is brisk, and it holds significant intrigue, making it a compelling watch."
+        }
+      ]
+    }
+  },
+  "feedback_agent": {
+    "input": "I hate sloe pacing dramas, I want a horror drama to watch.",
+    "output": {
+      "liked_traits": [],
+      "disliked_traits": [],
+      "updated_taste": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "liked_traits": [
+          "complex characters",
+          "emotional depth",
+          "intricate plot twists",
+          "emotional connection",
+          "natural acting"
+        ],
+        "disliked_traits": [
+          "slow pacing",
+          "lack of development for side characters"
+        ],
+        "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+      },
+      "current_intent": "horror drama",
+      "explanation": "New disliked trait recorded: 'sloe pacing'. Current viewing request for a 'horror drama' noted."
+    }
+  },
+  "new_intent": {
+    "input": "I hate sloe pacing dramas, I want a horror drama to watch.",
+    "output": {
+      "request_type": "genre_exploration",
+      "reference_titles": [],
+      "desired_traits": [
+        "horror",
+        "drama"
+      ],
+      "excluded_traits": [
+        "slow pacing"
+      ],
+      "preferred_languages": [],
+      "excluded_languages": [],
+      "max_episodes": null,
+      "explanation": "",
+      "language_relation": "any"
+    }
+  },
+  "sensitivity_tests": [
+    {
+      "test": 1,
+      "input": "I hate slow-paced dramas.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+        },
+        "current_intent": null,
+        "explanation": "The dislike for slow pacing is already noted."
+      },
+      "intent": {
+        "request_type": "general_discovery",
+        "reference_titles": [],
+        "desired_traits": [],
+        "excluded_traits": [
+          "slow-paced",
+          "dramas"
+        ],
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "max_episodes": null,
+        "explanation": "",
+        "language_relation": "any"
+      }
+    },
+    {
+      "test": 2,
+      "input": "I hate sloe pacing dramas.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+        },
+        "current_intent": null,
+        "explanation": "'sloe pacing' is interpreted as 'slow pacing', which is already in the disliked traits."
+      },
+      "intent": {
+        "request_type": "general_discovery",
+        "reference_titles": [],
+        "desired_traits": [],
+        "excluded_traits": [
+          "slow pacing"
+        ],
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "max_episodes": null,
+        "explanation": "",
+        "language_relation": "any"
+      }
+    },
+    {
+      "test": 3,
+      "input": "I lose interest when a series moves too slowly.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+        },
+        "current_intent": null,
+        "explanation": "The feedback reinforces the existing dislike for slow pacing but doesn't introduce new traits."
+      },
+      "intent": {
+        "request_type": "general_discovery",
+        "reference_titles": [],
+        "desired_traits": [
+          "fast-paced"
+        ],
+        "excluded_traits": [],
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "max_episodes": null,
+        "explanation": "",
+        "language_relation": "any"
+      }
+    },
+    {
+      "test": 4,
+      "input": "I dislike slow pacing, but I want horror tonight.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+        },
+        "current_intent": "horror",
+        "explanation": "No new liked or disliked traits identified; current intent to watch horror added."
+      },
+      "intent": {
+        "request_type": "genre_exploration",
+        "reference_titles": [],
+        "desired_traits": [
+          "horror"
+        ],
+        "excluded_traits": [
+          "slow pacing"
+        ],
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "max_episodes": null,
+        "explanation": "",
+        "language_relation": "any"
+      }
+    },
+    {
+      "test": 5,
+      "input": "I usually dislike horror, but I want to try it tonight.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [
+          "horror"
+        ],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters",
+            "horror"
+          ],
+          "reasoning": "I appreciated the depth and complexity of the story and characters, but found the pacing and side character development lacking."
+        },
+        "current_intent": "horror",
+        "explanation": "You want to try horror tonight, which is a new viewing request, but you usually dislike it."
+      },
+      "intent": {
+        "request_type": "genre_exploration",
+        "reference_titles": [],
+        "desired_traits": [
+          "horror"
+        ],
+        "excluded_traits": [
+          "non-horror"
+        ],
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "max_episodes": null,
+        "explanation": "User wants to explore the horror genre despite usually disliking it.",
+        "language_relation": "any"
+      }
+    }
+  ],
+  "stability_tests": [
+    {
+      "run": 1,
+      "input": "I loved Kara Para Ask for its emotional depth and plot twists, but disliked its slow pacing.",
+      "output": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "liked_traits": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_traits": [
+          "slow pacing"
+        ],
+        "reasoning": "The user enjoys stories that have strong emotional elements and surprising developments, but finds slow pacing to be a drawback."
+      }
+    },
+    {
+      "run": 2,
+      "input": "I loved Kara Para Ask for its emotional depth and plot twists, but disliked its slow pacing.",
+      "output": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "liked_traits": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_traits": [
+          "slow pacing"
+        ],
+        "reasoning": "The user enjoys stories that are emotionally engaging and have unexpected developments, but finds slower narratives less appealing."
+      }
+    },
+    {
+      "run": 3,
+      "input": "I loved Kara Para Ask for its emotional depth and plot twists, but disliked its slow pacing.",
+      "output": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "liked_traits": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_traits": [
+          "slow pacing"
+        ],
+        "reasoning": "The user appreciates stories with strong emotional engagement and unexpected developments, but finds slow pacing a drawback."
+      }
+    }
+  ]
+}

@@ -1,0 +1,762 @@
+{
+  "version": "V2",
+  "description": "Refined system prompts",
+  "taste_agent": {
+    "input": "I loved Kara Para Ask because of its complex characters and emotional depth. I enjoyed the intricate plot twists and how the story kept me guessing. However, I disliked the slow pacing and lack of development for side characters. I loved the emotional connection and natural acting.",
+    "output": {
+      "favorite_titles": [
+        "Kara Para Ask"
+      ],
+      "disliked_titles": [],
+      "liked_traits": [
+        "complex characters",
+        "emotional depth",
+        "intricate plot twists",
+        "emotional connection",
+        "natural acting"
+      ],
+      "disliked_traits": [
+        "slow pacing",
+        "lack of development for side characters"
+      ],
+      "liked_trait_details": [
+        "Complex characters make the story engaging.",
+        "Emotional depth enhanced the viewing experience.",
+        "Intricate plot twists kept me guessing throughout.",
+        "Emotional connection added to the overall impact.",
+        "Natural acting brought authenticity to the characters."
+      ],
+      "disliked_trait_details": [
+        "Slow pacing caused moments of disengagement.",
+        "Lack of development for side characters left me wanting more depth."
+      ],
+      "unknowns": [],
+      "needs_more_info": false,
+      "follow_up_questions": [],
+      "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+      "self_check_passed": true,
+      "self_check_notes": ""
+    }
+  },
+  "intent_agent": {
+    "input": "I want a series similar to Kara Para Ask, but with faster pacing and better side-character development. I prefer English or Spanish series. I want complex characters, emotional depth, and an engaging story.",
+    "output": {
+      "request_type": "similar_story",
+      "request_type_reason": "User wants a series similar to a specific title with particular improvements.",
+      "reference_titles": [
+        "Kara Para Ask"
+      ],
+      "desired_traits": [
+        "complex characters",
+        "emotional depth",
+        "engaging story"
+      ],
+      "excluded_traits": [],
+      "must_have": [],
+      "nice_to_have": [],
+      "mood_or_tone": [],
+      "content_format": "series",
+      "preferred_languages": [
+        "English",
+        "Spanish"
+      ],
+      "excluded_languages": [],
+      "language_relation": "same",
+      "max_episodes": null,
+      "conflicts_with_taste": null,
+      "clarifying_questions": [],
+      "explanation": "",
+      "self_check_passed": true,
+      "self_check_notes": ""
+    }
+  },
+  "discovery_agent": {
+    "output": {
+      "candidate_ids": [
+        6,
+        7
+      ],
+      "candidate_titles": [
+        "Cable Girls",
+        "30 Coins"
+      ],
+      "why_selected": [
+        "Features complex characters and emotional depth through rich storylines surrounding women's struggles and friendships.",
+        "Offers emotional connection and intricate plot twists rooted in supernatural elements and psychological horror."
+      ],
+      "matched_traits": [
+        "complex characters",
+        "emotional depth",
+        "intricate plot twists"
+      ],
+      "caveats": [],
+      "language_check": [
+        "pass",
+        "pass"
+      ],
+      "episode_check": [
+        "pass",
+        "pass"
+      ],
+      "exclusion_check": [
+        "pass",
+        "pass"
+      ],
+      "near_miss_ids": [
+        1,
+        2,
+        3
+      ],
+      "near_miss_reasons": [
+        "Title A had intricate plots but lacked character depth.",
+        "Title B was engaging but had slow pacing.",
+        "Title C had complexities but didn't connect emotionally."
+      ],
+      "search_reason": "User requested series similar to 'Kara Para Ask' with focus on complex narratives and emotional engagement.",
+      "self_check_passed": true,
+      "self_check_notes": ""
+    },
+    "candidates": [
+      {
+        "id": 6,
+        "title": "Cable Girls",
+        "country": "Spain",
+        "language": "Spanish",
+        "genres": [
+          "Historical",
+          "Romance",
+          "Melodrama"
+        ],
+        "overview": "Four women working at a telephone company in 1920s Madrid struggle with love, friendship, independence, and social expectations.",
+        "story_traits": [
+          "female friendships",
+          "forbidden romance",
+          "betrayal",
+          "emotional conflicts",
+          "social change"
+        ],
+        "episode_count": 42,
+        "content_type": null,
+        "pacing": null
+      },
+      {
+        "id": 7,
+        "title": "30 Coins",
+        "country": "Spain",
+        "language": "Spanish",
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Supernatural",
+          "Thriller"
+        ],
+        "overview": "A priest living in a small Spanish village becomes involved in terrifying supernatural events connected to a mysterious religious artifact.",
+        "story_traits": [
+          "supernatural horror",
+          "religious mystery",
+          "dark atmosphere",
+          "psychological fear",
+          "conspiracy"
+        ],
+        "episode_count": 16,
+        "content_type": null,
+        "pacing": null
+      }
+    ]
+  },
+  "similarity_agent": {
+    "output": {
+      "recommendations": [
+        {
+          "movie_id": 7,
+          "rank": 1,
+          "title": "30 Coins",
+          "score": 85,
+          "story_fit": 90,
+          "character_fit": 80,
+          "pacing_fit": null,
+          "emotional_fit": 80,
+          "constraint_fit": null,
+          "matched_liked_traits": [
+            "complex characters",
+            "emotional depth"
+          ],
+          "conflicting_disliked_traits": [
+            "slow pacing"
+          ],
+          "caveats": [],
+          "confidence": "high",
+          "explanation": "The intricate plot involving supernatural elements and a religious mystery creates a complex narrative that aligns with the user's appreciation for depth and twists."
+        },
+        {
+          "movie_id": 6,
+          "rank": 2,
+          "title": "Cable Girls",
+          "score": 70,
+          "story_fit": 75,
+          "character_fit": 75,
+          "pacing_fit": null,
+          "emotional_fit": 70,
+          "constraint_fit": null,
+          "matched_liked_traits": [
+            "complex characters",
+            "emotional depth"
+          ],
+          "conflicting_disliked_traits": [
+            "slow pacing"
+          ],
+          "caveats": [],
+          "confidence": "medium",
+          "explanation": "The drama around female friendships and emotional conflicts offers complex character relationships, though the pacing may interfere with engagement."
+        }
+      ],
+      "comparison_note": "30 Coins has a stronger emphasis on intricate plot twists and emotional depth compared to Cable Girls.",
+      "self_check_passed": true,
+      "self_check_notes": ""
+    }
+  },
+  "feedback_agent": {
+    "input": "I hate sloe pacing dramas, I want a horror drama to watch.",
+    "output": {
+      "liked_traits": [],
+      "disliked_traits": [],
+      "liked_trait_details": [],
+      "disliked_trait_details": [],
+      "changed_preferences": [
+        "slow pacing",
+        "disliked",
+        "disliked"
+      ],
+      "updated_taste": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "disliked_titles": [],
+        "liked_traits": [
+          "complex characters",
+          "emotional depth",
+          "intricate plot twists",
+          "emotional connection",
+          "natural acting"
+        ],
+        "disliked_traits": [
+          "slow pacing",
+          "lack of development for side characters"
+        ],
+        "liked_trait_details": [
+          "Complex characters make the story engaging.",
+          "Emotional depth enhanced the viewing experience.",
+          "Intricate plot twists kept me guessing throughout.",
+          "Emotional connection added to the overall impact.",
+          "Natural acting brought authenticity to the characters."
+        ],
+        "disliked_trait_details": [
+          "Slow pacing caused moments of disengagement.",
+          "Lack of development for side characters left me wanting more depth."
+        ],
+        "unknowns": [],
+        "needs_more_info": false,
+        "follow_up_questions": [],
+        "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      },
+      "current_intent": "horror drama",
+      "ambiguous_statements": [],
+      "explanation": "",
+      "self_check_passed": true,
+      "self_check_notes": ""
+    }
+  },
+  "new_intent": {
+    "input": "I hate sloe pacing dramas, I want a horror drama to watch.",
+    "output": {
+      "request_type": "general_discovery",
+      "request_type_reason": "User wants a horror drama without specific constraints.",
+      "reference_titles": [],
+      "desired_traits": [
+        "horror",
+        "drama"
+      ],
+      "excluded_traits": [
+        "slow pacing"
+      ],
+      "must_have": [],
+      "nice_to_have": [],
+      "mood_or_tone": [],
+      "content_format": "either",
+      "preferred_languages": [],
+      "excluded_languages": [],
+      "language_relation": "any",
+      "max_episodes": null,
+      "conflicts_with_taste": null,
+      "clarifying_questions": [],
+      "explanation": "",
+      "self_check_passed": true,
+      "self_check_notes": ""
+    }
+  },
+  "sensitivity_tests": [
+    {
+      "test": 1,
+      "input": "I hate slow-paced dramas.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "liked_trait_details": [],
+        "disliked_trait_details": [],
+        "changed_preferences": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "disliked_titles": [],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "liked_trait_details": [
+            "Complex characters make the story engaging.",
+            "Emotional depth enhanced the viewing experience.",
+            "Intricate plot twists kept me guessing throughout.",
+            "Emotional connection added to the overall impact.",
+            "Natural acting brought authenticity to the characters."
+          ],
+          "disliked_trait_details": [
+            "Slow pacing caused moments of disengagement.",
+            "Lack of development for side characters left me wanting more depth."
+          ],
+          "unknowns": [],
+          "needs_more_info": false,
+          "follow_up_questions": [],
+          "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+          "self_check_passed": true,
+          "self_check_notes": ""
+        },
+        "current_intent": null,
+        "ambiguous_statements": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      },
+      "intent": {
+        "request_type": "general_discovery",
+        "request_type_reason": "User wants recommendations without specific constraints.",
+        "reference_titles": [],
+        "desired_traits": [],
+        "excluded_traits": [
+          "slow-paced",
+          "dramas"
+        ],
+        "must_have": [],
+        "nice_to_have": [],
+        "mood_or_tone": [],
+        "content_format": "either",
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "language_relation": "any",
+        "max_episodes": null,
+        "conflicts_with_taste": null,
+        "clarifying_questions": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    },
+    {
+      "test": 2,
+      "input": "I hate sloe pacing dramas.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "liked_trait_details": [],
+        "disliked_trait_details": [],
+        "changed_preferences": [
+          "disliked_traits: 'slow pacing' -> 'slow pacing'"
+        ],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "disliked_titles": [],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "liked_trait_details": [
+            "Complex characters make the story engaging.",
+            "Emotional depth enhanced the viewing experience.",
+            "Intricate plot twists kept me guessing throughout.",
+            "Emotional connection added to the overall impact.",
+            "Natural acting brought authenticity to the characters."
+          ],
+          "disliked_trait_details": [
+            "Slow pacing caused moments of disengagement.",
+            "Lack of development for side characters left me wanting more depth."
+          ],
+          "unknowns": [],
+          "needs_more_info": false,
+          "follow_up_questions": [],
+          "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+          "self_check_passed": true,
+          "self_check_notes": ""
+        },
+        "current_intent": null,
+        "ambiguous_statements": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": "No duplicates found and no preferences removed without explicit user change."
+      },
+      "intent": {
+        "request_type": "general_discovery",
+        "request_type_reason": "User is looking for recommendations but wants to avoid slow-paced dramas.",
+        "reference_titles": [],
+        "desired_traits": [],
+        "excluded_traits": [
+          "slow pacing"
+        ],
+        "must_have": [],
+        "nice_to_have": [],
+        "mood_or_tone": [],
+        "content_format": "either",
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "language_relation": "any",
+        "max_episodes": null,
+        "conflicts_with_taste": null,
+        "clarifying_questions": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    },
+    {
+      "test": 3,
+      "input": "I lose interest when a series moves too slowly.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "liked_trait_details": [],
+        "disliked_trait_details": [],
+        "changed_preferences": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "disliked_titles": [],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "liked_trait_details": [
+            "Complex characters make the story engaging.",
+            "Emotional depth enhanced the viewing experience.",
+            "Intricate plot twists kept me guessing throughout.",
+            "Emotional connection added to the overall impact.",
+            "Natural acting brought authenticity to the characters."
+          ],
+          "disliked_trait_details": [
+            "Slow pacing caused moments of disengagement.",
+            "Lack of development for side characters left me wanting more depth."
+          ],
+          "unknowns": [],
+          "needs_more_info": false,
+          "follow_up_questions": [],
+          "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+          "self_check_passed": true,
+          "self_check_notes": ""
+        },
+        "current_intent": null,
+        "ambiguous_statements": [],
+        "explanation": "The user dislikes slow pacing, reaffirming their existing dislike for it, but did not indicate any new preferences or intentions. No long-term traits were added or changed.",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      },
+      "intent": {
+        "request_type": "series_discovery",
+        "request_type_reason": "User wants series recommendations that maintain a good pace and avoid slow narratives.",
+        "reference_titles": [],
+        "desired_traits": [],
+        "excluded_traits": [
+          "slow-paced"
+        ],
+        "must_have": [],
+        "nice_to_have": [],
+        "mood_or_tone": [],
+        "content_format": "series",
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "language_relation": "any",
+        "max_episodes": null,
+        "conflicts_with_taste": null,
+        "clarifying_questions": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    },
+    {
+      "test": 4,
+      "input": "I dislike slow pacing, but I want horror tonight.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "liked_trait_details": [],
+        "disliked_trait_details": [],
+        "changed_preferences": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "disliked_titles": [],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "liked_trait_details": [
+            "Complex characters make the story engaging.",
+            "Emotional depth enhanced the viewing experience.",
+            "Intricate plot twists kept me guessing throughout.",
+            "Emotional connection added to the overall impact.",
+            "Natural acting brought authenticity to the characters."
+          ],
+          "disliked_trait_details": [
+            "Slow pacing caused moments of disengagement.",
+            "Lack of development for side characters left me wanting more depth."
+          ],
+          "unknowns": [],
+          "needs_more_info": false,
+          "follow_up_questions": [],
+          "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+          "self_check_passed": true,
+          "self_check_notes": ""
+        },
+        "current_intent": "horror tonight",
+        "ambiguous_statements": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      },
+      "intent": {
+        "request_type": "genre_exploration",
+        "request_type_reason": "User wants to explore a specific genre, which is horror, while expressing a dislike for slow pacing.",
+        "reference_titles": [],
+        "desired_traits": [
+          "horror"
+        ],
+        "excluded_traits": [
+          "slow pacing"
+        ],
+        "must_have": [],
+        "nice_to_have": [],
+        "mood_or_tone": [],
+        "content_format": "either",
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "language_relation": "any",
+        "max_episodes": null,
+        "conflicts_with_taste": null,
+        "clarifying_questions": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    },
+    {
+      "test": 5,
+      "input": "I usually dislike horror, but I want to try it tonight.",
+      "feedback": {
+        "liked_traits": [],
+        "disliked_traits": [],
+        "liked_trait_details": [],
+        "disliked_trait_details": [],
+        "changed_preferences": [],
+        "updated_taste": {
+          "favorite_titles": [
+            "Kara Para Ask"
+          ],
+          "disliked_titles": [],
+          "liked_traits": [
+            "complex characters",
+            "emotional depth",
+            "intricate plot twists",
+            "emotional connection",
+            "natural acting"
+          ],
+          "disliked_traits": [
+            "slow pacing",
+            "lack of development for side characters"
+          ],
+          "liked_trait_details": [
+            "Complex characters make the story engaging.",
+            "Emotional depth enhanced the viewing experience.",
+            "Intricate plot twists kept me guessing throughout.",
+            "Emotional connection added to the overall impact.",
+            "Natural acting brought authenticity to the characters."
+          ],
+          "disliked_trait_details": [
+            "Slow pacing caused moments of disengagement.",
+            "Lack of development for side characters left me wanting more depth."
+          ],
+          "unknowns": [],
+          "needs_more_info": false,
+          "follow_up_questions": [],
+          "reasoning": "The user appreciates complex storytelling and depth in character development while disliking slow pacing and insufficient development of secondary characters.",
+          "self_check_passed": true,
+          "self_check_notes": ""
+        },
+        "current_intent": "horror",
+        "ambiguous_statements": [],
+        "explanation": "The user usually dislikes horror but wants to try it tonight, indicating a potential exploration of preferences.",
+        "self_check_passed": true,
+        "self_check_notes": "All existing traits are preserved, no duplicates, and current intent is correctly separated."
+      },
+      "intent": {
+        "request_type": "genre_exploration",
+        "request_type_reason": "User wants to explore horror genre content tonight.",
+        "reference_titles": [],
+        "desired_traits": [],
+        "excluded_traits": [],
+        "must_have": [],
+        "nice_to_have": [],
+        "mood_or_tone": [],
+        "content_format": "either",
+        "preferred_languages": [],
+        "excluded_languages": [],
+        "language_relation": "any",
+        "max_episodes": null,
+        "conflicts_with_taste": "User usually dislikes horror content but is open to trying it tonight.",
+        "clarifying_questions": [],
+        "explanation": "",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    }
+  ],
+  "stability_tests": [
+    {
+      "run": 1,
+      "input": "I loved Kara Para Ask for its emotional depth and plot twists, but disliked its slow pacing.",
+      "output": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "disliked_titles": [
+          "slow pacing"
+        ],
+        "liked_traits": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_traits": [
+          "slow pacing"
+        ],
+        "liked_trait_details": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_trait_details": [
+          "slow pacing"
+        ],
+        "unknowns": [],
+        "needs_more_info": false,
+        "follow_up_questions": [],
+        "reasoning": "The user enjoyed 'Kara Para Ask' for its emotional resonance and unexpected developments, but found its pacing to be a drawback, indicating a preference for more dynamic storytelling.",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    },
+    {
+      "run": 2,
+      "input": "I loved Kara Para Ask for its emotional depth and plot twists, but disliked its slow pacing.",
+      "output": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "disliked_titles": [
+          "slow pacing"
+        ],
+        "liked_traits": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_traits": [
+          "slow pacing"
+        ],
+        "liked_trait_details": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_trait_details": [
+          "slow pacing"
+        ],
+        "unknowns": [],
+        "needs_more_info": false,
+        "follow_up_questions": [],
+        "reasoning": "User appreciates emotional depth and unexpected plot twists but finds slow pacing off-putting.",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    },
+    {
+      "run": 3,
+      "input": "I loved Kara Para Ask for its emotional depth and plot twists, but disliked its slow pacing.",
+      "output": {
+        "favorite_titles": [
+          "Kara Para Ask"
+        ],
+        "disliked_titles": [
+          "slow pacing"
+        ],
+        "liked_traits": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_traits": [
+          "slow pacing"
+        ],
+        "liked_trait_details": [
+          "emotional depth",
+          "plot twists"
+        ],
+        "disliked_trait_details": [
+          "slow pacing"
+        ],
+        "unknowns": [],
+        "needs_more_info": false,
+        "follow_up_questions": [],
+        "reasoning": "The user expressed a love for the emotional depth and plot twists in 'Kara Para Ask', indicating a preference for engaging narratives, but also cited slow pacing as a significant reason for dislike, suggesting a need for more dynamic storytelling.",
+        "self_check_passed": true,
+        "self_check_notes": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": 1,
+    "title": "Crash Landing on You",
+    "country": "South Korea",
+    "language": "Korean",
+    "genres": ["Romance", "Comedy", "Melodrama"],
+    "overview": "A wealthy South Korean woman accidentally lands in North Korea and falls in love with an army officer who helps protect her.",
+    "story_traits": ["forbidden love", "emotional depth", "romantic chemistry", "family conflicts", "heartwarming moments"],
+    "episode_count": 16
+  },
+  {
+    "id": 2,
+    "title": "Mr. Sunshine",
+    "country": "South Korea",
+    "language": "Korean",
+    "genres": ["Historical", "Romance", "Melodrama", "Action"],
+    "overview": "A Korean-born American soldier returns to his homeland during a period of political unrest and falls in love with a noblewoman fighting for independence.",
+    "story_traits": ["forbidden romance", "patriotism", "tragic love", "emotional depth", "political conflicts"],
+    "episode_count": 24
+  },
+  {
+    "id": 3,
+    "title": "Kingdom",
+    "country": "South Korea",
+    "language": "Korean",
+    "genres": ["Historical", "Horror", "Thriller", "Action"],
+    "overview": "A crown prince investigates a mysterious plague that turns people into terrifying creatures while powerful officials threaten his kingdom.",
+    "story_traits": ["zombie horror", "survival", "political conspiracy", "fast pacing", "suspense"],
+    "episode_count": 12
+  },
+  {
+    "id": 4,
+    "title": "Sen Cal Kapimi",
+    "country": "Turkey",
+    "language": "Turkish",
+    "genres": ["Romance", "Comedy", "Drama"],
+    "overview": "A young woman agrees to pretend to be engaged to a wealthy businessman, but their fake relationship slowly turns into real love.",
+    "story_traits": ["fake relationship", "enemies to lovers", "romantic chemistry", "jealousy", "character growth"],
+    "episode_count": 52
+  },
+  {
+    "id": 5,
+    "title": "Midnight at the Pera Palace",
+    "country": "Turkey",
+    "language": "Turkish",
+    "genres": ["Historical", "Mystery", "Drama", "Thriller"],
+    "overview": "A journalist discovers a mysterious room in an Istanbul hotel that transports her into the past, where she becomes involved in a political conspiracy.",
+    "story_traits": ["time travel", "historical mystery", "political intrigue", "romantic tension", "suspense"],
+    "episode_count": 16
+  },
+  {
+    "id": 6,
+    "title": "Cable Girls",
+    "country": "Spain",
+    "language": "Spanish",
+    "genres": ["Historical", "Romance", "Melodrama"],
+    "overview": "Four women working at a telephone company in 1920s Madrid struggle with love, friendship, independence, and social expectations.",
+    "story_traits": ["female friendships", "forbidden romance", "betrayal", "emotional conflicts", "social change"],
+    "episode_count": 42
+  },
+  {
+    "id": 7,
+    "title": "30 Coins",
+    "country": "Spain",
+    "language": "Spanish",
+    "genres": ["Horror", "Mystery", "Supernatural", "Thriller"],
+    "overview": "A priest living in a small Spanish village becomes involved in terrifying supernatural events connected to a mysterious religious artifact.",
+    "story_traits": ["supernatural horror", "religious mystery", "dark atmosphere", "psychological fear", "conspiracy"],
+    "episode_count": 16
+  },
+  {
+    "id": 8,
+    "title": "Love Between Fairy and Devil",
+    "country": "China",
+    "language": "Mandarin Chinese",
+    "genres": ["Fantasy", "Romance", "Historical", "Melodrama"],
+    "overview": "A gentle fairy accidentally releases a powerful demon lord, creating a magical connection that slowly develops into an unexpected romance.",
+    "story_traits": ["forbidden love", "enemies to lovers", "magical world", "emotional sacrifice", "character development"],
+    "episode_count": 36
+  },
+  {
+    "id": 9,
+    "title": "The Untamed",
+    "country": "China",
+    "language": "Mandarin Chinese",
+    "genres": ["Fantasy", "Historical", "Mystery", "Action"],
+    "overview": "Two cultivators uncover dark secrets and political conspiracies while confronting the consequences of events from their past.",
+    "story_traits": ["deep friendship", "loyalty", "moral ambiguity", "hidden secrets", "emotional depth"],
+    "episode_count": 50
+  },
+  {
+    "id": 10,
+    "title": "The Victims' Game",
+    "country": "Taiwan",
+    "language": "Mandarin Chinese",
+    "genres": ["Crime", "Mystery", "Thriller", "Drama"],
+    "overview": "A forensic investigator discovers that his estranged daughter may be connected to a series of mysterious deaths.",
+    "story_traits": ["forensic mystery", "family relationships", "psychological tension", "emotional depth", "suspense"],
+    "episode_count": 16
+  }
+]
